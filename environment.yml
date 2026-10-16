@@ -1,0 +1,24 @@
+name: proteomics-discovery-skill
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python>=3.10
+  - r-base>=4.3
+  - r-jsonlite
+  - r-optparse
+  - r-statmod
+  - bioconductor-limma
+  - bioconductor-deqms
+  - bioconductor-msqrob2
+  - bioconductor-msstats
+  - bioconductor-msstatstmt
+  - bioconductor-msstatsptm
+  - bioconductor-nparc
+  - bioconductor-fgsea
+  - pip
+  - pip:
+      - -r requirements.txt
+# Note: `limpa` (Bioconductor >= 3.21) may not yet be on bioconda; install from R with
+#   BiocManager::install("limpa")
+# If R / Bioconductor is unavailable, the validated Python engine (scripts/02_statistical_engine_py.py) is used.

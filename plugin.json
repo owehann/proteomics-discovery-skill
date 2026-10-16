@@ -1,0 +1,12 @@
+{
+  "name": "proteomics-discovery-skill",
+  "displayName": "ProteoSkill",
+  "version": "4.1.0",
+  "description": "Calibrated, provenance-tracked proteomics analysis: 12-point sample & data QC, empirical-null FDR, TOST equivalence, mechanism figures and biologist-friendly group-meeting slides.",
+  "logo": "assets/logo.png",
+  "suggestedPrompts": [
+    "Inspect my proteomics .xlsx file and show me the Gate 1 experimental design plan",
+    "Run the full ProteoSkill analysis, check the literature, and draw the mechanism schematics from my results",
+    "Generate a group-meeting PowerPoint presentation from my proteomics results"
+  ]
+}
