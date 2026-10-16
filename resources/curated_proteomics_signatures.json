@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "version": "4.1.0",
+    "license": "MIT / CC-BY-4.0",
+    "description": "Curated domain reference signatures for 12-point forensic QC, MISEV2023 5-category EV audit, subcellular compartments, curated functional modules, macromolecular complexes, paralog families, signed TF regulons, and kinase substrate regulons."
+  },
+  "excel_date_gene_fixes": {
+    "1-Mar": "MARCHF1", "2-Mar": "MARCHF2", "3-Mar": "MARCHF3", "4-Mar": "MARCHF4",
+    "5-Mar": "MARCHF5", "6-Mar": "MARCHF6", "7-Mar": "MARCHF7", "8-Mar": "MARCHF8",
+    "9-Mar": "MARCHF9", "10-Mar": "MARCHF10", "11-Mar": "MARCHF11",
+    "1-Sep": "SEPTIN1", "2-Sep": "SEPTIN2", "3-Sep": "SEPTIN3", "4-Sep": "SEPTIN4",
+    "5-Sep": "SEPTIN5", "6-Sep": "SEPTIN6", "7-Sep": "SEPTIN7", "8-Sep": "SEPTIN8",
+    "9-Sep": "SEPTIN9", "10-Sep": "SEPTIN10", "11-Sep": "SEPTIN11", "12-Sep": "SEPTIN12",
+    "14-Sep": "SEPTIN14", "15-Sep": "SELENOF",
+    "1-Dec": "DELEC1", "1-Oct": "POU2F1", "2-Oct": "POU2F2", "3-Oct": "POU5F1",
+    "MARCH1": "MARCHF1", "MARCH2": "MARCHF2", "MARCH3": "MARCHF3", "MARCH4": "MARCHF4",
+    "MARCH5": "MARCHF5", "MARCH6": "MARCHF6", "MARCH7": "MARCHF7", "MARCH8": "MARCHF8",
+    "MARCH9": "MARCHF9", "SEPT1": "SEPTIN1", "SEPT2": "SEPTIN2", "SEPT4": "SEPTIN4",
+    "SEPT5": "SEPTIN5", "SEPT6": "SEPTIN6", "SEPT7": "SEPTIN7", "SEPT8": "SEPTIN8",
+    "SEPT9": "SEPTIN9", "SEPT10": "SEPTIN10", "SEPT11": "SEPTIN11",
+    "SLC9A3R1": "NHERF1", "GBA": "GBA1", "C11orf58": "SMAP", "HIST1H1C": "H1-2",
+    "H2AFZ": "H2AZ1"
+  },
+  "contaminant_patterns": {
+    "crap_accession_prefixes": ["cRAP-", "CON__", "REV__", "sp|P00761|TRYP_PIG", "sp|P02769|ALBU_BOVIN"],
+    "exogenous_ig_regex": "^(IGHG[1-4]|IGHM|IGHA[12]|IGKC|IGLC[1-7]|IGHV|IGKV|IGLV|IGHE|IGHD)",
+    "keratin_skin_genes": ["KRT1", "KRT2", "KRT9", "KRT10", "KRT14", "KRT16", "KRT77", "FLG", "DSG1"],
+    "biotin_endogenous_carboxylases": ["ACACA", "ACACB", "PC", "PCCA", "PCCB", "MCCC1", "MCCC2"],
+    "shared_peptide_paralog_families": ["UGT1A", "UGT2B", "CYP2C", "CYP3A", "CYP4F", "HBA", "HBB", "HLA-A", "HLA-B", "HLA-C", "TUBA", "TUBB", "ACTB", "ACTG"]
+  },
+  "misev2023_markers": {
+    "Cat1a_Tetraspanins_MVB": ["CD9", "CD63", "CD81", "CD82", "CD151", "TSPAN8", "TSPAN14", "TSPAN15", "ROM1", "UPK1B", "LITAF"],
+    "Cat1b_Integrins_SingleTM": ["ITGB1", "ITGA6", "ITGAV", "ITGB4", "ITGB5", "ITGA2", "ITGA3", "ITGA5", "BSG", "ADAM10", "NT5E", "LAMP1", "LAMP2", "SDC1", "SDC4", "EGFR", "AXL", "ICAM1", "CD44", "PTGFRN", "IGSF8"],
+    "Cat2a_ESCRT_Cytosolic": ["PDCD6IP", "TSG101", "SDCBP", "VPS4A", "VPS4B", "VPS28", "VPS37A", "VPS37B", "CHMP2A", "CHMP2B", "CHMP3", "CHMP4A", "CHMP4B", "CHMP6", "FLOT1", "FLOT2", "ANXA2", "ANXA5", "ANXA11", "SYTL4", "HGS", "STAM"],
+    "Cat2b_Cytoskeletal_HeatShock": ["HSPA8", "HSP90AA1", "HSP90AB1", "ACTN4", "MSN", "EZR", "RDX", "YWHAZ", "YWHAE", "SYN1", "LYN", "YES1", "SRC"],
+    "Cat3a_Lipoproteins_Albumin_CoIsolates": ["ALB", "APOB", "APOE", "APOA1", "APOA2", "APOC2", "APOC3", "A2M", "HP", "TF", "FGB", "FGG", "FGA", "AHSG"],
+    "Cat3b_Ribosomal_Vault": ["MVP", "RPL5", "RPL11", "RPS3", "RPS6", "RPS8", "RPL4", "RPS4X"],
+    "Cat4_Intracellular_Organelle_Leakage": ["HSP90B1", "HSPA5", "CANX", "CALR", "GOLGA2", "VDAC1", "CYCS", "IMMT", "LMNA", "LMNB1", "H4C1", "PEX14"],
+    "Cat5_Secreted_GrowthFactors_ECM": ["FN1", "LAMA4", "LAMA5", "LAMB1", "LAMC1", "VCAN", "NPNT", "COL6A1", "NID1", "NID2", "SERPINE1", "SERPINE2", "THBS1", "TGFBI", "MDK", "DKK1", "CHGB"]
+  },
+  "subcellular_compartments": {
+    "Plasma_Membrane_and_Surfaceome": ["ITGB1", "ITGAV", "ITGB5", "ITGA6", "ITGB4", "ITGA5", "ITGA2", "ITGA3", "CD9", "CD63", "CD81", "CD151", "TSPAN8", "TSPAN14", "EGFR", "AXL", "KDR", "NT5E", "ANPEP", "CPM", "ATP1A1", "SLC3A2", "TFRC", "CD44", "ICAM1", "BSG", "GPRC5A", "TGFBR3"],
+    "Secreted_and_Extracellular_Matrix": ["FN1", "LAMA4", "LAMA5", "LAMB1", "LAMC1", "VCAN", "NPNT", "COL6A1", "NID1", "NID2", "SERPINE1", "SERPINE2", "IGFBP5", "MDK", "DKK1", "APOE", "CFH", "S100A8", "S100A9", "RNASE4", "F5", "THBS1", "LGALS3BP", "GPC3", "SPP1", "TGFBI"],
+    "Endosome_MVB_and_Vesicle_Trafficking": ["RAB27A", "RAB27B", "RAB11A", "RAB7A", "RAB5A", "PDCD6IP", "TSG101", "SDCBP", "VPS4A", "VPS4B", "VPS28", "CHMP2A", "CHMP4B", "FLOT1", "FLOT2", "ARFGEF2", "ST3GAL4", "VAMP3", "VAMP7", "SNAP23", "SYNGR2"],
+    "Cytosol_Redox_and_Iron_Homeostasis": ["FTH1", "FTL", "GCLC", "GCLM", "GSS", "GPX4", "TXNRD1", "GSR", "NQO1", "HMOX1", "OSGIN1", "NFE2L2", "LYN", "YES1", "SRC"],
+    "Mitochondria_and_Metabolism": ["VDAC1", "CYCS", "IMMT", "SLC25A3", "ATP5F1A", "ATP5F1B", "NDUFS1", "SDHA", "UQCRC2", "COX4I1", "SOD2", "PHGDH", "PSAT1"],
+    "Nucleus_Chromatin_and_Transcription": ["SMARCA4", "SMARCA5", "DNMT1", "UHRF1", "STAT1", "STAT2", "MCM2", "MCM4", "MCM6", "CDK1", "TOP2A", "PCNA", "FEN1", "SMARCD1", "GATAD2B"]
+  },
+  "paralog_families": {
+    "RAB27A": ["RAB27B", "RAB3A", "RAB3D", "RAB11A", "RAB11B", "RAB8A", "PDCD6IP", "TSG101"],
+    "CD63": ["CD9", "CD81", "CD82", "CD151", "TSPAN8", "TSPAN14", "SYNGR2", "MYADM", "PDCD6IP"],
+    "NFE2L2": ["NFE2L1", "NFE2L3", "BACH1", "BACH2", "GCLC", "GCLM", "GSS", "GPX4", "NQO1"],
+    "FTH1": ["FTL", "FTMT", "TFRC", "NCOA4", "HMOX1", "STEAP3", "ACO1", "IREB2"],
+    "SMARCA4": ["SMARCA2", "SMARCA5", "HELLS", "CHD4", "DNMT1", "UHRF1"],
+    "IGHG1": ["IGHG2", "IGHG3", "IGHG4", "IGKC", "IGLC2"],
+    "ITGB1": ["ITGAV", "ITGB5", "ITGA6", "ITGB4", "ITGA5", "ITGA2", "ITGA3", "CD151", "CD63"],
+    "SDCBP": ["PDCD6IP", "TSG101", "SDC1", "SDC4", "CD63"]
+  },
+  "corum_complexes": {
+    "Integrin_Tetraspanin_Web": ["ITGA1", "ITGA2", "ITGA3", "ITGA5", "ITGA6", "ITGAV", "ITGB1", "ITGB3", "ITGB4", "ITGB5", "CD9", "CD63", "CD81", "CD82", "CD151", "TSPAN1", "TSPAN8", "TSPAN14", "PTGFRN", "IGSF8"],
+    "ESCRT_MVB_Biogenesis_Machinery": ["HGS", "STAM", "STAM2", "TSG101", "VPS28", "VPS37A", "VPS37B", "MVB12A", "VPS25", "VPS36", "SNF8", "CHMP2A", "CHMP2B", "CHMP3", "CHMP4A", "CHMP4B", "CHMP6", "PDCD6IP", "VPS4A", "VPS4B", "SDCBP"],
+    "Caveolae_Flotillin_Lipid_Raft": ["FLOT1", "FLOT2", "CAV1", "CAV2", "CAVIN1", "LYN", "YES1", "SRC", "NT5E", "CPM", "ANPEP", "ATP1A1", "SYNGR2"],
+    "Laminin_Fibronectin_ECM_Network": ["FN1", "LAMA4", "LAMA5", "LAMB1", "LAMC1", "VCAN", "NPNT", "COL6A1", "COL6A2", "COL6A3", "NID1", "NID2", "HSPG2", "TGFBI", "THBS1", "SERPINE1", "SERPINE2"],
+    "Rab_SNARE_Exocytic_Fusion_Complex": ["RAB27A", "RAB27B", "RAB11A", "RAB11B", "RAB7A", "RAB5A", "RAB8A", "RAB10", "VAMP2", "VAMP3", "VAMP7", "VAMP8", "STX1A", "STX3", "STX4", "STX7", "SNAP23", "SNAP25", "STXBP1", "STXBP2"],
+    "COPII_Anterograde_ER_Golgi_Coat": ["SAR1A", "SAR1B", "SEC23A", "SEC23B", "SEC24A", "SEC24B", "SEC24C", "SEC24D", "SEC13", "SEC31A", "ARFGEF2"],
+    "COPI_Retrograde_Coatomer": ["COPA", "COPB1", "COPB2", "COPD", "COPE", "COPG1", "COPG2", "COPZ1", "ARF1"],
+    "Exocyst_Tethering_Complex": ["EXOC1", "EXOC2", "EXOC3", "EXOC4", "EXOC5", "EXOC6", "EXOC7", "EXOC8"],
+    "26S_Proteasome_Core_and_Lid": ["PSMA1", "PSMA2", "PSMA3", "PSMA4", "PSMA5", "PSMA6", "PSMA7", "PSMB1", "PSMB2", "PSMB3", "PSMB4", "PSMB5", "PSMB6", "PSMB7", "PSMC1", "PSMC2", "PSMC3", "PSMC4", "PSMC5", "PSMC6", "PSMD1", "PSMD2", "PSMD3", "PSMD4", "PSMD6", "PSMD7", "PSMD8", "PSMD11", "PSMD12", "PSMD13", "PSMD14"],
+    "Cullin_RING_NEDD8_Ligase_Complex": ["CUL1", "CUL2", "CUL3", "CUL4A", "CUL4B", "CUL5", "RBX1", "SKP1", "DDB1", "NEDD8", "SENP8", "CAND1", "COPS2", "COPS3", "COPS4", "COPS5", "COPS6", "COPS7A", "COPS8"],
+    "Ferritin_Iron_Homeostasis_Complex": ["FTH1", "FTL", "TFRC", "SLC11A2", "STEAP3", "NCOA4", "ACO1", "IREB2", "HMOX1", "BLVRB"],
+    "Glutathione_Redox_Defense_System": ["GCLC", "GCLM", "GSS", "GPX4", "GPX1", "GSR", "TXN", "TXNRD1", "PRDX1", "PRDX2", "PRDX6", "GSTM3", "GSTA1", "GSTP1", "OSGIN1"],
+    "MCM2_7_CMG_Replicative_Helicase": ["MCM2", "MCM3", "MCM4", "MCM5", "MCM6", "MCM7", "CDC45", "GINS1", "GINS2", "GINS3", "GINS4", "PCNA", "FEN1", "RRM1", "RRM2"],
+    "SWI_SNF_BAF_Chromatin_Remodeler": ["SMARCA4", "SMARCA2", "SMARCB1", "SMARCC1", "SMARCC2", "SMARCD1", "SMARCD2", "SMARCE1", "ARID1A", "ARID1B", "ACTR5", "ACTR8"],
+    "NuRD_Epigenetic_Repressor_Complex": ["GATAD2B", "CHD4", "HDAC1", "HDAC2", "MTA1", "MTA2", "RBBP4", "RBBP7", "MBD2", "MBD3"],
+    "Cytoplasmic_Ribosome_80S": ["RPL3", "RPL4", "RPL5", "RPL6", "RPL7", "RPL8", "RPL10", "RPL11", "RPL13", "RPL15", "RPS2", "RPS3", "RPS4X", "RPS6", "RPS8", "RPS9", "RPS14", "RPS16", "RPS18", "RPS20"],
+    "V_ATPase_Endolysosomal_Proton_Pump": ["ATP6V1A", "ATP6V1B2", "ATP6V1C1", "ATP6V1D", "ATP6V1E1", "ATP6V1F", "ATP6V1G1", "ATP6V1H", "ATP6V0A1", "ATP6V0D1", "ATP6AP1", "ATP6AP2"],
+    "Chaperonin_CCT_TRiC_Complex": ["TCP1", "CCT2", "CCT3", "CCT4", "CCT5", "CCT6A", "CCT7", "CCT8"]
+  },
+  "pathway_gene_sets": {
+    "CURATED: ECM-Receptor Interaction": ["FN1", "LAMA4", "LAMA5", "LAMB1", "LAMC1", "COL6A1", "COL6A2", "COL6A3", "VCAN", "NPNT", "THBS1", "HSPG2", "ITGB1", "ITGAV", "ITGB5", "ITGA6", "ITGB4", "ITGA5", "ITGA2", "ITGA3", "CD44", "SDC1", "SDC4", "DAG1"],
+    "CURATED: Focal Adhesion & Integrin Signaling": ["ITGB1", "ITGAV", "ITGB5", "ITGA6", "ITGB4", "ITGA5", "ITGA2", "ITGA3", "FN1", "LAMA4", "COL6A1", "EGFR", "KDR", "SRC", "FYN", "YES1", "LYN", "PTK2", "PXN", "VCL", "ACTN4", "TLN1", "FLNA", "GRB2", "CAV1"],
+    "CURATED: Integrin Cell Surface Interactions": ["ITGB1", "ITGAV", "ITGB5", "ITGA6", "ITGB4", "ITGA5", "ITGA2", "ITGA3", "CD151", "CD9", "CD63", "CD81", "TSPAN8", "FN1", "LAMA4", "NPNT", "VCAN", "ICAM1", "THBS1", "SPP1"],
+    "CURATED: Exosomal & Multivesicular Body Membrane": ["CD63", "CD9", "CD81", "CD151", "TSPAN8", "TSPAN14", "SYNGR2", "RAB27A", "PDCD6IP", "TSG101", "SDCBP", "FLOT1", "FLOT2", "ITGB1", "ITGAV", "ITGB5", "NT5E", "ANPEP", "CPM", "ATP1A1", "SLC3A2"],
+    "CURATED: Membrane Trafficking & TGN-to-EV Sorting": ["RAB27A", "RAB11A", "RAB7A", "RAB5A", "RAB8A", "SYNGR2", "ARFGEF2", "ST3GAL4", "APPL1", "VAMP3", "VAMP7", "SNAP23", "SEC23A", "SEC24C", "COPA", "COPB1", "EXOC4", "VPS4A", "CHMP4B"],
+    "CURATED: Epithelial-Mesenchymal Transition (EMT)": ["FN1", "VCAN", "SERPINE1", "SERPINE2", "TGFBI", "THBS1", "LAMA4", "COL6A1", "ITGB1", "ITGAV", "ITGA5", "AXL", "CD44", "VIM", "LGALS1", "MDK", "DKK1", "IGFBP5"],
+    "CURATED: Ferroptosis & Cellular Iron Homeostasis": ["FTH1", "FTL", "TFRC", "SLC11A2", "SLC3A2", "SLC7A11", "GPX4", "GCLC", "GCLM", "GSS", "HMOX1", "NCOA4", "STEAP3", "ACSL4", "LPCAT3", "VDAC2", "TP53"],
+    "CURATED: Glutathione & NRF2 Redox Detoxification": ["GCLC", "GCLM", "GSS", "GPX4", "GSR", "TXNRD1", "TXN", "NQO1", "HMOX1", "OSGIN1", "PRDX1", "PRDX6", "GSTM3", "GSTP1", "SOD1", "CAT", "S100A8", "S100A9"],
+    "CURATED: NEDD8 Conjugation & Cullin-RING Ligases": ["NEDD8", "SENP8", "CUL1", "CUL2", "CUL3", "CUL4A", "CUL4B", "RBX1", "SKP1", "DDB1", "CAND1", "COPS2", "COPS4", "COPS5", "COPS6"],
+    "CURATED: E2F Targets & DNA Replication": ["MCM2", "MCM3", "MCM4", "MCM5", "MCM6", "MCM7", "PCNA", "FEN1", "RRM1", "RRM2", "TYMS", "CDK1", "CCNB1", "TOP2A", "NUSAP1", "HMMR", "CENPF", "NUF2", "PBK"],
+    "CURATED: Epigenetic Chromatin Remodeling": ["SMARCD1", "GATAD2B", "SMARCA4", "CHD4", "HDAC1", "HDAC2", "DNMT1", "DNMT3A", "UHRF1", "HELLS"],
+    "CURATED: GPI-Anchor & Purinergic Ectoenzyme Signaling": ["NT5E", "CPM", "ANPEP", "ALPL", "BST2", "GPC1", "GPC3", "CD55", "CD59", "LY6E", "PLAUR", "EFNA1"],
+    "CURATED: Complement and Coagulation Cascades": ["CFH", "F3", "F5", "F2", "SERPINE1", "SERPINC1", "SERPINF2", "KNG1", "VWF", "VTN", "C3", "A2M", "PLAU", "PLAUR"]
+  },
+  "collectri_tf_regulons": {
+    "NFE2L2": [["FTH1", 1], ["FTL", 1], ["GCLC", 1], ["GCLM", 1], ["GSS", 1], ["TXNRD1", 1], ["GSR", 1], ["NQO1", 1], ["HMOX1", 1], ["OSGIN1", 1], ["SQSTM1", 1], ["PRDX1", 1]],
+    "BACH1": [["HMOX1", -1], ["FTH1", -1], ["FTL", -1], ["GCLC", -1], ["GCLM", -1], ["OSGIN1", -1]],
+    "YAP1_TEAD1": [["CTGF", 1], ["CYR61", 1], ["IGFBP5", 1], ["AXL", 1], ["ITGB1", 1], ["ITGAV", 1], ["SERPINE1", 1], ["MCM6", 1]],
+    "MYC": [["NPM1", 1], ["NCL", 1], ["RPL5", 1], ["RPS6", 1], ["MCM4", 1], ["PCNA", 1], ["LDHA", 1], ["ENO1", 1], ["SLC3A2", 1], ["CDK1", 1]],
+    "E2F1": [["MCM2", 1], ["MCM3", 1], ["MCM4", 1], ["MCM5", 1], ["MCM6", 1], ["MCM7", 1], ["PCNA", 1], ["FEN1", 1], ["TOP2A", 1], ["RRM2", 1], ["CDK1", 1]],
+    "FOXM1": [["CCNB1", 1], ["CDK1", 1], ["TOP2A", 1], ["AURKB", 1], ["PLK1", 1], ["BIRC5", 1], ["CENPF", 1], ["HMMR", 1], ["NUSAP1", 1], ["PBK", 1]],
+    "HIF1A": [["CA9", 1], ["VEGFA", 1], ["SLC2A1", 1], ["LDHA", 1], ["PGK1", 1], ["ENO1", 1], ["SERPINE1", 1], ["ADM", 1], ["IGFBP5", 1], ["NT5E", 1]],
+    "STAT3": [["MCL1", 1], ["BCL2L1", 1], ["S100A8", 1], ["S100A9", 1], ["SOCS3", 1], ["ICAM1", 1], ["FN1", 1], ["SERPINE1", 1], ["VEGFA", 1]],
+    "STAT1": [["ISG15", 1], ["IFIT1", 1], ["IFIT2", 1], ["IFIT3", 1], ["MX1", 1], ["OAS1", 1], ["OAS2", 1], ["STAT2", 1], ["IRF9", 1]],
+    "TP53": [["CDKN1A", 1], ["BAX", 1], ["MDM2", 1], ["GADD45A", 1], ["FAS", 1], ["SLC7A11", -1], ["BIRC5", -1], ["CDK1", -1]],
+    "SMAD3_SMAD4": [["SERPINE1", 1], ["FN1", 1], ["COL6A1", 1], ["TGFBI", 1], ["VCAN", 1], ["ITGAV", 1], ["ITGB5", 1], ["CTGF", 1]]
+  },
+  "kinase_substrate_regulons": {
+    "EGFR": [["GRB2", 1], ["SHC1", 1], ["STAT3", 1], ["MAPK1", 1], ["MAPK3", 1], ["AKT1", 1], ["PLCG1", 1], ["CBLB", 1], ["ITGB4", 1]],
+    "LYN_YES1_SRC": [["ITGB1", 1], ["ITGAV", 1], ["ITGB5", 1], ["PTK2", 1], ["PXN", 1], ["BCAR1", 1], ["CAV1", 1], ["FLOT1", 1], ["FLOT2", 1], ["CD63", 1]],
+    "CDK1_CDK2": [["MCM2", 1], ["MCM4", 1], ["RB1", 1], ["LMNA", 1], ["LMNB1", 1], ["TOP2A", 1], ["NUSAP1", 1], ["PBK", 1], ["HMMR", 1]],
+    "AKT1_MTOR": [["RPS6", 1], ["EIF4EBP1", 1], ["GSK3B", -1], ["FOXO3", -1], ["MCL1", 1], ["SLC3A2", 1], ["FTH1", 1]],
+    "ATR_ATM": [["FANCD2", 1], ["CHEK1", 1], ["BRCA1", 1], ["H2AX", 1], ["RPA1", 1], ["FEN1", 1], ["TP53", 1]]
+  },
+  "confounder_signatures": {
+    "Lentiviral_Interferon_dsRNA_Stress": ["ISG15", "IFIT1", "IFIT2", "IFIT3", "IFITM1", "IFITM3", "MX1", "MX2", "OAS1", "OAS2", "OAS3", "OASL", "STAT1", "STAT2", "IRF7", "IRF9", "BST2", "DDX58", "IFIH1", "EIF2AK2", "ADAR"],
+    "ER_Unfolded_Protein_ISR_Stress": ["HSPA5", "HSP90B1", "PDIA4", "PDIA3", "CALR", "CANX", "DDIT3", "ATF4", "ASNS", "PHGDH", "PSAT1", "SHMT2", "HERPUD1", "DNAJB9"],
+    "CMG_Mitotic_Proliferation_Index": ["MCM2", "MCM3", "MCM4", "MCM5", "MCM6", "MCM7", "FEN1", "PCNA", "RRM1", "RRM2", "TYMS", "DUT", "CDK1", "CCNB1", "TOP2A", "MKI67", "SMC2", "SMC4", "STMN1", "BIRC5", "AURKB"],
+    "Erythrocyte_Contamination": ["HBA1", "HBA2", "HBB", "HBD", "HBQ1", "AHSP", "SPTA1", "SPTB", "ANK1", "EPB42", "SLC4A1", "CA1", "CA2", "BLVRB"],
+    "Platelet_Activation_Contamination": ["ITGA2B", "ITGB3", "GP1BA", "GP9", "PPBP", "PF4", "TUBB1", "CAVIN2", "FERMT3", "THBS1", "VWF"],
+    "Neutrophil_Degranulation": ["MPO", "ELANE", "CTSG", "PRTN3", "LTF", "LCN2", "CAMP", "MMP8", "MMP9", "S100A8", "S100A9", "S100A12", "CYBB", "AZU1"],
+    "Nuclear_Histone_Retention_Lock": ["H1-2", "H1-4", "H2AZ1", "H2AZ2", "H4C1", "UHRF1", "LMNB1", "TOP2A"]
+  }
+}
