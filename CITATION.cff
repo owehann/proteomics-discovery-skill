@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "ProteoSkill: AI-Guided Proteomics Discovery, Mechanism & Reporting"
+message: "If you use ProteoSkill in your research, please cite it using the metadata below."
+type: software
+authors:
+  - alias: "owehann"
+    name-particle: "Han"
+    given-names: "Xinyin"
+    affiliation: "The University of Hong Kong (HKU)"
+repository-code: "https://github.com/owehann/proteomics-discovery-skill"
+license: MIT
+version: 1.0.0
+date-released: "2026-10-16"
+keywords:
+  - proteomics
+  - mass-spectrometry
+  - bioinformatics
+  - empirical-bayes
+  - agent-skills

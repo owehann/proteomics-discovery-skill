@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "version": "3.0.0",
+    "license": "MIT / CC-BY-4.0",
+    "description": "Curated domain signatures for 12-point forensic QC, MISEV2023 EV audit, confounder scoring, and HGNC Excel date-corruption repair."
+  },
+  "excel_date_gene_fixes": {
+    "1-Mar": "MARCHF1", "2-Mar": "MARCHF2", "3-Mar": "MARCHF3", "4-Mar": "MARCHF4",
+    "5-Mar": "MARCHF5", "6-Mar": "MARCHF6", "7-Mar": "MARCHF7", "8-Mar": "MARCHF8",
+    "9-Mar": "MARCHF9", "10-Mar": "MARCHF10", "11-Mar": "MARCHF11",
+    "1-Sep": "SEPTIN1", "2-Sep": "SEPTIN2", "3-Sep": "SEPTIN3", "4-Sep": "SEPTIN4",
+    "5-Sep": "SEPTIN5", "6-Sep": "SEPTIN6", "7-Sep": "SEPTIN7", "8-Sep": "SEPTIN8",
+    "9-Sep": "SEPTIN9", "10-Sep": "SEPTIN10", "11-Sep": "SEPTIN11", "12-Sep": "SEPTIN12",
+    "14-Sep": "SEPTIN14", "15-Sep": "SELENOF",
+    "1-Dec": "DELEC1", "1-Oct": "POU2F1", "2-Oct": "POU2F2", "3-Oct": "POU5F1",
+    "MARCH1": "MARCHF1", "MARCH2": "MARCHF2", "MARCH3": "MARCHF3", "MARCH4": "MARCHF4",
+    "MARCH5": "MARCHF5", "MARCH6": "MARCHF6", "MARCH7": "MARCHF7", "MARCH8": "MARCHF8",
+    "MARCH9": "MARCHF9", "SEPT1": "SEPTIN1", "SEPT2": "SEPTIN2", "SEPT4": "SEPTIN4",
+    "SEPT5": "SEPTIN5", "SEPT6": "SEPTIN6", "SEPT7": "SEPTIN7", "SEPT8": "SEPTIN8",
+    "SEPT9": "SEPTIN9", "SEPT10": "SEPTIN10", "SEPT11": "SEPTIN11",
+    "SLC9A3R1": "NHERF1", "GBA": "GBA1", "C11orf58": "SMAP", "HIST1H1C": "H1-2",
+    "H2AFZ": "H2AZ1"
+  },
+  "contaminant_patterns": {
+    "crap_accession_prefixes": ["cRAP-", "CON__", "REV__", "sp|P00761|TRYP_PIG", "sp|P02769|ALBU_BOVIN"],
+    "exogenous_ig_regex": "^(IGHG[1-4]|IGHM|IGHA[12]|IGKC|IGLC[1-7]|IGHV|IGKV|IGLV|IGHE|IGHD)",
+    "keratin_skin_genes": ["KRT1", "KRT2", "KRT9", "KRT10", "KRT14", "KRT16", "KRT77", "FLG", "DSG1"],
+    "biotin_endogenous_carboxylases": ["ACACA", "ACACB", "PC", "PCCA", "PCCB", "MCCC1", "MCCC2"],
+    "shared_peptide_paralog_families": ["UGT1A", "UGT2B", "CYP2C", "CYP3A", "CYP4F", "HBA", "HBB", "HLA-A", "HLA-B", "HLA-C", "TUBA", "TUBB", "ACTB", "ACTG"]
+  },
+  "misev2023_markers": {
+    "Cat1a_Tetraspanins_MVB": ["CD9", "CD63", "CD81", "CD82", "CD151", "TSPAN8", "TSPAN15", "ROM1", "UPK1B"],
+    "Cat1b_Integrins_SingleTM": ["ITGB1", "ITGA6", "ITGAV", "ITGB4", "ITGB5", "ITGA2", "ITGA3", "ITGA5", "BSG", "ADAM10", "NT5E", "LAMP1", "LAMP2", "SDC1", "SDC4"],
+    "Cat2a_ESCRT_Cytosolic": ["PDCD6IP", "TSG101", "SDCBP", "VPS4A", "VPS4B", "VPS28", "VPS37B", "CHMP2A", "CHMP4B", "FLOT1", "FLOT2", "ANXA2", "ANXA5", "ANXA11", "SYTL4"],
+    "Cat2b_Cytoskeletal_HeatShock": ["HSPA8", "HSP90AA1", "HSP90AB1", "ACTN4", "MSN", "EZR", "RDX", "YWHAZ", "YWHAE"],
+    "Cat3a_Lipoproteins_Albumin_CoIsolates": ["ALB", "APOB", "APOE", "APOA1", "APOA2", "APOC2", "APOC3", "A2M", "HP", "TF", "FGB", "FGG", "FGA"],
+    "Cat3b_Ribosomal_Vault": ["MVP", "RPL5", "RPL11", "RPS3", "RPS6", "RPS8"],
+    "Cat4_Intracellular_Organelle_Leakage": ["HSP90B1", "HSPA5", "CANX", "CALR", "GOLGA2", "VDAC1", "CYCS", "IMMT", "LMNA", "LMNB1", "H4C1", "PEX14"]
+  },
+  "confounder_signatures": {
+    "Lentiviral_Interferon_dsRNA_Stress": ["ISG15", "IFIT1", "IFIT2", "IFIT3", "IFITM1", "IFITM3", "MX1", "MX2", "OAS1", "OAS2", "OAS3", "OASL", "STAT1", "STAT2", "IRF7", "IRF9", "BST2", "DDX58", "IFIH1", "EIF2AK2", "ADAR"],
+    "ER_Unfolded_Protein_ISR_Stress": ["HSPA5", "HSP90B1", "PDIA4", "PDIA3", "CALR", "CANX", "DDIT3", "ATF4", "ASNS", "PHGDH", "PSAT1", "SHMT2", "HERPUD1", "DNAJB9"],
+    "CMG_Mitotic_Proliferation_Index": ["MCM2", "MCM3", "MCM4", "MCM5", "MCM6", "MCM7", "FEN1", "PCNA", "RRM1", "RRM2", "TYMS", "DUT", "CDK1", "CCNB1", "TOP2A", "MKI67", "SMC2", "SMC4", "STMN1", "BIRC5", "AURKB"],
+    "Erythrocyte_Contamination": ["HBA1", "HBA2", "HBB", "HBD", "HBQ1", "AHSP", "SPTA1", "SPTB", "ANK1", "EPB42", "SLC4A1", "CA1", "CA2", "BLVRB"],
+    "Platelet_Activation_Contamination": ["ITGA2B", "ITGB3", "GP1BA", "GP9", "PPBP", "PF4", "TUBB1", "CAVIN2", "FERMT3", "THBS1", "VWF"],
+    "Neutrophil_Degranulation": ["MPO", "ELANE", "CTSG", "PRTN3", "LTF", "LCN2", "CAMP", "MMP8", "MMP9", "S100A8", "S100A9", "S100A12", "CYBB", "AZU1"],
+    "Nuclear_Histone_Retention_Lock": ["H1-2", "H1-4", "H2AZ1", "H2AZ2", "H4C1", "UHRF1", "LMNB1", "TOP2A"]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "proteomics-discovery-skill",
+  "displayName": "ProteoSkill",
+  "version": "1.0.0",
+  "description": "Turn raw proteomics .xlsx tables into calibrated statistics, BioRender-style mechanism schematics, and group-meeting slides.",
+  "logo": "assets/logo.png",
+  "suggestedPrompts": [
+    "Inspect my proteomics .xlsx file and show me the Gate 1 experimental design plan",
+    "Run the full ProteoSkill analysis, check the literature, and draw a BioRender mechanism figure",
+    "Generate a group-meeting PowerPoint presentation from my proteomics results"
+  ]
+}

@@ -1,0 +1,52 @@
+name: Proteomics Discovery Skill CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  validate-skill:
+    name: End-to-End Validation Suite (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Verify Python syntax compilation across all scripts
+        run: |
+          python -m py_compile scripts/*.py tests/run_validation_suite.py
+
+      - name: Validate SKILL.md frontmatter and JSON resource schema
+        run: |
+          python -c "
+          import json, pathlib
+          p = pathlib.Path('resources/curated_proteomics_signatures.json')
+          data = json.loads(p.read_text(encoding='utf-8'))
+          assert 'excel_date_gene_fixes' in data and len(data['excel_date_gene_fixes']) >= 30
+          skill_text = pathlib.Path('SKILL.md').read_text(encoding='utf-8')
+          assert skill_text.startswith('---\nname: proteomics-discovery-skill')
+          print('Schema & frontmatter validation passed.')
+          "
+
+      - name: Run 5-Suite End-to-End Forensic & Statistical Validation
+        run: |
+          python tests/run_validation_suite.py
